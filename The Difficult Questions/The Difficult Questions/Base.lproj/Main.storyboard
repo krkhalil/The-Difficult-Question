@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vz3-yK-4iy">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="The_Difficult_Questions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0X-rr-8R5">
+                                <rect key="frame" x="124.33333333333333" y="370" width="165.33333333333337" height="60"/>
+                                <color key="backgroundColor" red="0.98532742259999995" green="0.80116760730000003" blue="0.20578426120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="H64-S8-OqL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
+                                <state key="normal" title="Try!">
+                                    <color key="titleColor" red="0.36888829810000001" green="0.5" blue="0.4829788921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ihE-J8-hQn" kind="show" id="LZ6-kN-REd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1y-ch-tCX">
+                                <rect key="frame" x="124.33333333333333" y="438" width="165.33333333333337" height="60"/>
+                                <color key="backgroundColor" red="0.98532742259999995" green="0.80116760730000003" blue="0.20578426120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aqc-bC-QV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
+                                <state key="normal" title="Feedback!">
+                                    <color key="titleColor" red="0.36888829810000001" green="0.5" blue="0.4829788921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feebackButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qeq-70-pFn"/>
+                                    <action selector="feedbackButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6a-96-6Wd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Difficult Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0V-8M-n1g">
+                                <rect key="frame" x="66.666666666666657" y="239" width="280.66666666666674" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95280677079999998" green="0.57203382250000001" blue="0.19131067399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v0X-rr-8R5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Efr-3x-5D2"/>
+                            <constraint firstItem="v0V-8M-n1g" firstAttribute="centerX" secondItem="v0X-rr-8R5" secondAttribute="centerX" id="Nb4-lF-tyX"/>
+                            <constraint firstItem="v0X-rr-8R5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P8x-S2-7vF"/>
+                            <constraint firstItem="v0V-8M-n1g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vr7-uH-mAb"/>
+                            <constraint firstItem="v1y-ch-tCX" firstAttribute="centerX" secondItem="v0X-rr-8R5" secondAttribute="centerX" id="aFo-Ay-JNc"/>
+                            <constraint firstItem="v0X-rr-8R5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cbO-vp-XeZ"/>
+                            <constraint firstItem="v1y-ch-tCX" firstAttribute="width" secondItem="v0X-rr-8R5" secondAttribute="width" id="dty-kT-cQr"/>
+                            <constraint firstItem="v1y-ch-tCX" firstAttribute="top" secondItem="v0X-rr-8R5" secondAttribute="bottom" constant="8" id="edw-09-oAN"/>
+                            <constraint firstItem="v0X-rr-8R5" firstAttribute="top" secondItem="v0V-8M-n1g" secondAttribute="bottom" constant="93" id="iNo-5R-bJ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3gW-id-CUB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="24"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gMp-cJ-smI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vz3-yK-4iy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R2T-LX-Pkr">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N9t-Ya-aDs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9A-0Q-wib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="24"/>
+        </scene>
+        <!--Select View Controller-->
+        <scene sceneID="ZpX-Ai-tVZ">
+            <objects>
+                <viewController storyboardIdentifier="SelectViewController" id="ihE-J8-hQn" customClass="SelectViewController" customModule="The_Difficult_Questions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Slr-BW-NUg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdF-sw-VUA">
+                                <rect key="frame" x="82.666666666666671" y="370" width="248.66666666666663" height="60"/>
+                                <color key="backgroundColor" red="0.98532742259999995" green="0.80116760730000003" blue="0.20578426120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="c9J-E3-lfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="23"/>
+                                <state key="normal" title="General Knowledge">
+                                    <color key="titleColor" red="0.36888829810000001" green="0.5" blue="0.4829788921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gkButtonTouched:" destination="ihE-J8-hQn" eventType="touchUpInside" id="t0L-Wz-X6i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-Q9-teB">
+                                <rect key="frame" x="82.666666666666671" y="438" width="248.66666666666663" height="60"/>
+                                <color key="backgroundColor" red="0.98532742259999995" green="0.80116760730000003" blue="0.20578426120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Y8M-JN-nQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="23"/>
+                                <state key="normal" title="Geographic">
+                                    <color key="titleColor" red="0.36888829810000001" green="0.5" blue="0.4829788921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="geoButtonTOUCHED:" destination="ihE-J8-hQn" eventType="touchUpInside" id="H94-nh-gAZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select type of Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7M-Ys-U7Q">
+                                <rect key="frame" x="57" y="239" width="300" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95280677079999998" green="0.57203382250000001" blue="0.19131067399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OdF-sw-VUA" firstAttribute="width" secondItem="Slr-BW-NUg" secondAttribute="width" multiplier="0.6" id="Bie-1x-pbA"/>
+                            <constraint firstItem="F7M-Ys-U7Q" firstAttribute="centerX" secondItem="OdF-sw-VUA" secondAttribute="centerX" id="BnX-KT-4Qj"/>
+                            <constraint firstItem="Lvh-Q9-teB" firstAttribute="top" secondItem="OdF-sw-VUA" secondAttribute="bottom" constant="8" id="JPK-I1-Vrf"/>
+                            <constraint firstItem="Lvh-Q9-teB" firstAttribute="centerX" secondItem="OdF-sw-VUA" secondAttribute="centerX" id="Qd2-nW-17J"/>
+                            <constraint firstItem="OdF-sw-VUA" firstAttribute="top" secondItem="F7M-Ys-U7Q" secondAttribute="bottom" constant="93" id="T5O-4R-az8"/>
+                            <constraint firstItem="OdF-sw-VUA" firstAttribute="centerX" secondItem="D4y-wb-xOn" secondAttribute="centerX" id="aFV-t7-Zee"/>
+                            <constraint firstItem="Lvh-Q9-teB" firstAttribute="width" secondItem="OdF-sw-VUA" secondAttribute="width" id="b93-vC-jMw"/>
+                            <constraint firstItem="OdF-sw-VUA" firstAttribute="centerY" secondItem="D4y-wb-xOn" secondAttribute="centerY" id="foQ-GY-H2E"/>
+                            <constraint firstItem="F7M-Ys-U7Q" firstAttribute="centerX" secondItem="D4y-wb-xOn" secondAttribute="centerX" id="uh2-oB-i5R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D4y-wb-xOn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vwc-D6-ahy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7v-4o-7bD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="24"/>
+        </scene>
+    </scenes>
+</document>
